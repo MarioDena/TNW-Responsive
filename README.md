@@ -3,6 +3,10 @@
 This project consists of building a copy of [this site](https://thenextweb.com/).
 Fully responsive.
 
+# Live preview
+
+https://mariodena.github.io/TNW-Responsive/
+
 # Built With
 
 * Flex
