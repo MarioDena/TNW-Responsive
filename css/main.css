@@ -230,9 +230,8 @@ a {
 
 .yellowBarText {
   width: 100%;
-  text-align: center;
   font-size: 12px;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 30px;
   color: black;
 }
@@ -277,6 +276,7 @@ a {
     display: inline-block;
     font-size: 14px;
     font-family: "Krub", sans-serif;
+    margin-left: -5px;
   }
   .inlineMenu {
     margin: 0 6px;
@@ -299,7 +299,7 @@ a {
   }
   .yellowBarText {
     font-size: 14px;
-    padding-left: 60px;
+    padding-left: 10px;
   }
   .--hamburguer {
     display: none;
