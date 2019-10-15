@@ -1,4 +1,4 @@
-# Design-Teardown
+# TNW-Responsive
 
 This project consists of building a copy of [this site](https://thenextweb.com/).
 Fully responsive.
