@@ -1,0 +1,147 @@
+.coverContainer {
+  display: flex;
+  width: 100vw;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.cover-card {
+  flex-grow: 1;
+  height: 200px;
+  background-image: url(./img/coverCardImg3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: relative;
+
+  &__layer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      background: linear-gradient(to bottom, rgba(43, 43, 43, 0.3) 10%, rgb(20, 20, 20) 100%);
+      cursor: pointer;
+    }
+  }
+  &__category {
+    z-index: 1;
+    margin-left: 10;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: "Krub", sans-serif;
+    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+  }
+
+  &__title {
+    z-index: 1;
+    font-size: 20px;
+    margin-left: 10;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+  }
+
+  &__info {
+    z-index: 1;
+    font-size: 12px;
+    margin: 10px;
+    color: grey;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    z-index: 1;
+    margin: 0 5px;
+  }
+
+  &__link {
+    z-index: 1;
+
+    &:hover {
+      z-index: 1;
+      color: white;
+    }
+  }
+}
+
+.cover-card:first-child {
+  background-image: url(./img/coverCardImg2.jpg);
+}
+
+.cover-card:last-child {
+  background-image: url(./img/coverCardImg1.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+  .coverContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100vw - 5px);
+    height: 430px;
+    overflow-x: hidden;
+  }
+
+  .cover-card {
+    height: 200px;
+    flex: 1 1 25%;
+    width: 100%;
+    background-size: auto 100%;
+    background-position: 0 0;
+
+    &__title {
+      font-size: 20px;
+      width: 230px;
+    }
+  }
+  .--mainCoverCard {
+    height: 430px;
+    width: 65vw;
+    flex: 2 1 100%;
+
+    & > p {
+      width: inherit;
+
+      &.cover-card__title {
+        font-size: 36px;
+        font-weight: bolder;
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .coverContainer {
+    height: 530px;
+  }
+  .cover-card {
+    flex: 1 1 25%;
+    &__title {
+      width: 350px;
+    }
+    
+  }
+  .--mainCoverCard {
+    flex: 2 1 100%;
+
+    & .cover-card__layer {
+      background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+      &:hover {
+        background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
+        cursor: pointer;
+      }
+    }
+  }
+}

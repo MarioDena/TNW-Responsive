@@ -1,0 +1,176 @@
+header {
+  position: fixed;
+  background: white;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modalLogo{
+  display: none;
+}
+
+.navBar {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  position: relative;
+
+  &__headerLogoContainer {
+    display: flex;
+    width: 106px;
+    height: 50px;
+    background: #ce0295;
+    background: -webkit-linear-gradient(to right, #ce0295, #e94057, #fe4225);
+    background: linear-gradient(to right, #ce0295, #e94057, #fe4225);
+  }
+
+  &__headerLogo {
+    margin: auto;
+    width: 66px;
+    height: 16px;
+  }
+
+  &__blackMenu {
+    display: none;
+  }
+
+  &__yellowBar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 30px;
+    background-color: #fd3;
+  }
+
+  &__menuBar {
+    width: calc(100vw - 120px);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &_listMenu {
+    display: none;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgb(226, 226, 226);
+    padding: 10px;
+    height: 49px;
+    width: 49px;
+  }
+}
+
+.yellowBarText {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .navBar {
+    height: 80px;
+
+    &__headerLogoContainer {
+      height: 80px;
+    }
+
+    &__blackMenu {
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      width: calc(100vw - 106px);
+      height: 32px;
+      background-color: black;
+      font-size: 13px;
+
+      & .--rightAlignFlex {
+        display: none;
+      }
+    }
+
+    &__menuBar {
+      width: calc(100vw - 120px);
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_listMenu {
+      display: inline-block;
+      font-size: 14px;
+      font-family: "Krub", sans-serif;
+    }
+  }
+  .inlineMenu {
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+
+    &__link {
+      color: rgb(172, 172, 172);
+      margin: 0 6px;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .--activeLink {
+    color: white;
+  }
+  
+  .yellowBarText {
+    font-size: 14px;
+    padding-left: 60px;
+  }
+
+  .--hamburguer {
+    display: none;
+  }
+
+  .--whiteBarlink {
+    margin: 0 10px;
+    text-shadow: 1px 0px 0px rgb(179, 179, 179);
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+
+  .navbar__icon{
+    margin-right: 10px;
+  }
+
+  .navbar__headerLogoContainer{
+    display: none;
+  }
+
+  .navbar__menuBar{
+    width: 100vw;
+  }
+
+  .navbar__blackMenu{
+    width: 100vw;
+  }
+
+  .modalLogo{
+    display: block;
+    z-index: 1;
+    max-width: 40vw;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
