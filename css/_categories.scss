@@ -19,8 +19,12 @@
   }
 
   &__latestText {
-    
+    display: block;
     padding: 10px 10px 0 20px;
+    cursor: pointer;
+    &:hover{
+      color: black;
+    }
 
     & > span {
       font-size: 13px;
@@ -38,6 +42,7 @@
     max-height: 96px;
     max-width: 96px;
     object-fit: cover;
+    cursor: pointer;
   }
 
   &__body {
@@ -70,6 +75,11 @@
   justify-content: flex-end;
   position: relative;
   color: white;
+  cursor: pointer;
+
+  &:hover{
+    color: #fe4225;
+  }
 
   &__layer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 1) 100%);
@@ -78,11 +88,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    &:hover {
-      background: linear-gradient(to bottom, rgba(43, 43, 43, 0.3) 10%, rgb(20, 20, 20) 100%);
-      cursor: pointer;
-    }
   }
 
   &__section {
@@ -92,7 +97,6 @@
     margin-right: 10px;
     font-size: 14px;
     font-family: "Krub", sans-serif;
-    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
   }
 
   &__title {
@@ -102,7 +106,6 @@
     margin-top: 10px;
     margin-right: 10px;
     font-weight: bold;
-    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
   }
 
   &__info {

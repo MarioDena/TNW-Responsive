@@ -18,6 +18,11 @@
   justify-content: flex-end;
   color: white;
   position: relative;
+  cursor: pointer;
+
+  &:hover{
+    color: #fe4225;
+  }
 
   &__layer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 1) 100%);
@@ -27,10 +32,6 @@
     width: 100%;
     height: 100%;
 
-    &:hover {
-      background: linear-gradient(to bottom, rgba(43, 43, 43, 0.3) 10%, rgb(20, 20, 20) 100%);
-      cursor: pointer;
-    }
   }
   &__category {
     z-index: 1;
@@ -39,7 +40,7 @@
     margin-right: 10px;
     font-size: 14px;
     font-family: "Krub", sans-serif;
-    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+    font-weight: bold;
   }
 
   &__title {
@@ -49,7 +50,7 @@
     margin-top: 10px;
     margin-right: 10px;
     font-weight: bold;
-    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+    
   }
 
   &__info {
@@ -139,10 +140,6 @@
 
     & .cover-card__layer {
       background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
-      &:hover {
-        background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
-        cursor: pointer;
-      }
     }
   }
 }
