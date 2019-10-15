@@ -78,7 +78,7 @@
   cursor: pointer;
 
   &:hover{
-    color: #fe4225;
+    text-shadow: 1px 0px 0px #fe4225;
   }
 
   &__layer {
@@ -115,6 +115,7 @@
     color: grey;
     display: flex;
     align-items: center;
+    text-shadow: none;
   }
 
   &__icon {
