@@ -29,10 +29,13 @@
   width: 100%;
   display: flex;
   margin: 15px 0;
+  
 
   &__image {
     width: 75px;
     height: 75px;
+    cursor: pointer;
+    
   }
 
   &__info {

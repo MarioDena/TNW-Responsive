@@ -20,8 +20,12 @@
 
   &__latestText {
     display: block;
-    padding: 10px 10px 0 20px;
+    //padding: 10px 10px 0 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
     cursor: pointer;
+    line-height: 20px;
     &:hover{
       color: black;
     }
