@@ -15,7 +15,7 @@ hr {
 }
 
 .named-section {
-  margin: 50px 30px;
+  margin: 50px 50px;
   color: #fe4225;
 
   &__header {
@@ -26,6 +26,12 @@ hr {
     font-family: "Kanit", sans-serif;
     font-size: 27px;
     font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover{
+      color: grey;
+    }
   }
 }
 
