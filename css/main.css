@@ -485,6 +485,7 @@ a {
 @media only screen and (min-width: 1050px) {
   .coverContainer {
     height: 530px;
+    width: calc(100vw - 20px);
   }
   .cover-card {
     -webkit-box-flex: 1;
@@ -773,6 +774,8 @@ a {
   min-height: 96px;
   max-height: 96px;
   max-width: 96px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .category__body {
@@ -1039,12 +1042,13 @@ main {
   padding-top: 80px;
 }
 
-hr.style-one {
-  border: 1px solid #e2e2e2;
+hr {
+  border: none;
+  border-top: 1px solid #e2e2e2;
 }
 
 .named-section {
-  margin: 50px 20px;
+  margin: 50px 30px;
   color: #fe4225;
 }
 
@@ -1070,5 +1074,13 @@ a:hover {
   main {
     padding-top: 110px;
   }
+}
+
+.category_article {
+  line-height: 20px;
+}
+
+.category_article > a {
+  font-size: 13px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -125,6 +125,7 @@
 @media only screen and (min-width: 1050px) {
   .coverContainer {
     height: 530px;
+    width: calc(100vw - 20px);
   }
   .cover-card {
     flex: 1 1 25%;
